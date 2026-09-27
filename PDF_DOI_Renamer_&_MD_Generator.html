@@ -215,8 +215,8 @@
         []
         (sanitize-all-files! "Renamed (& Clean) - downloaded"
                               #(-> %
-                                   (str/replace #"(?i)&amp;" "_and_")
-                                   (str/replace #"&" "_and_"))
+                                   (str/replace #"(?i)&amp;" "and")
+                                   (str/replace #"&" "and"))
                               #(str/includes? % "&")))
 
       ;; =========================================================
